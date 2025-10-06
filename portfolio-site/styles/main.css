@@ -24,15 +24,15 @@ body{
 
 /* top landing */
 .top-landing{ background:#000; padding:36px 0 8px; border-bottom:1px solid rgba(255,255,255,0.06) }
-.container{ width:100%; max-width:960px; margin:0 auto; padding:0 24px }
+.container{ width:100%; max-width:890px; margin:0 auto; padding:0 32px }
 .hero-art{ display:flex; justify-content:center; margin-bottom:10px; position:relative }
 .hero-art::after{ content:''; position:absolute; inset:0; border-radius:18px; background:radial-gradient(60% 60% at 50% 30%, rgba(40,250,170,0.10), rgba(0,0,0,0) 60%); pointer-events:none; mix-blend-mode:screen }
-.hero-art img, .video-wrap video{ width:100%; max-width:560px; height:auto; border-radius:18px; box-shadow:0 40px 90px rgba(0,0,0,0.7); filter:saturate(105%) contrast(105%); }
+.hero-art img, .video-wrap video{ width:100%; max-width:340px; height:auto; border-radius:18px; box-shadow:0 40px 90px rgba(0,0,0,0.7); filter:saturate(105%) contrast(105%); }
 .video-wrap video{ mix-blend-mode:screen; opacity:0.92 }
 .headline{ text-align:center; font-size:28px; font-weight:700; color:var(--text); margin:14px auto 12px; font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; letter-spacing:0.2px }
 
 /* Landing two-column */
-.landing-grid{ display:grid; grid-template-columns:1fr 480px; gap:28px; align-items:center }
+.landing-grid{ display:grid; grid-template-columns:1fr 276px; gap:27px; align-items:center }
 .intro{ padding:12px 6px }
 .greeting{ font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-size:34px; margin:0 0 10px }
 .intro .headline{ text-align:left; font-size:20px; margin:0 }
@@ -44,7 +44,7 @@ body{
   grid-template-columns:320px 1fr;
   gap:32px;
   align-items:start;
-  max-width:1200px;
+  max-width:890px;
   margin:48px auto;
   padding:24px;
 }
@@ -150,6 +150,18 @@ body{
   .hero-art{ justify-self:center }
 }
 
+/* Larger screens: give a bit more breathing room but keep content constrained */
+@media (min-width:1200px){
+  /* Further squeezed by ~10% */
+  .container{ max-width:970px; padding:0 98px }
+  .landing-grid{ grid-template-columns:1fr 292px }
+  .hero-art img, .video-wrap video{ max-width:455px }
+}
+
+@media (min-width:1600px){
+  .container{ max-width:970px; padding:0 178px }
+}
+
 /* Tech stack pills */
 .tech-grid{ display:flex; flex-wrap:wrap; gap:10px; margin-top:12px }
 .tech-pill{ display:inline-block; padding:8px 12px; border-radius:999px; background:rgba(255,255,255,0.02); color:var(--text); border:1px solid var(--border); font-weight:600; font-size:13px }
@@ -187,4 +199,24 @@ body{
   .cards{ grid-template-columns:1fr }
   .projects{ grid-template-columns:1fr }
   .hero-right{ width:100% }
+}
+
+/* Blog page specific cleanup: reduce clutter and size for a cleaner list view */
+.blog .container{ max-width:760px; padding:0 28px }
+.blog .top-landing{ padding:16px 0 4px; border-bottom:1px solid rgba(255,255,255,0.04) }
+.blog .greeting{ font-size:44px; margin:6px 0 6px; line-height:1.05; font-weight:800 }
+.blog .headline{ font-size:16px; margin:0 0 4px; color:var(--muted) }
+.blog .section{ background:transparent; padding:8px 0; margin:8px 0 }
+.blog .section-title{ font-size:18px }
+.blog .section-title::before{ display:none }
+.blog .list-cards{ max-width:700px; margin:8px auto }
+.blog .list-card{ padding:14px; border-radius:12px; background:transparent; border:1px solid var(--border); box-shadow:none; transition:border-color .15s ease, background .15s ease }
+.blog .list-card:hover{ transform:none; background:rgba(255,255,255,0.02); border-color:rgba(255,255,255,0.12) }
+.blog .list-title{ font-size:17px }
+.blog .list-desc{ font-size:14px; color:var(--muted-2) }
+.blog .list-meta{ font-size:12px }
+.blog .footer{ text-align:center; margin-top:26px }
+
+@media (min-width:1200px){
+  .blog .greeting{ font-size:56px }
 }

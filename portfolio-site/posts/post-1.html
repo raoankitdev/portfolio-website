@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Why I prefer small models for prototyping — Ankit Rao</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+  <body>
+    <header class="top-landing">
+      <div class="container">
+        <a href="../blog.html" class="nav-link">← Back to Blog</a>
+        <h2 class="greeting" style="margin-top:14px">Why I prefer small models for prototyping</h2>
+        <p class="headline" style="text-align:left; margin-top:6px">A short note on iteration speed, cost, and reproducibility when building ML features.</p>
+      </div>
+    </header>
+
+    <main class="container content">
+      <article class="section">
+        <h3 class="section-title">Summary</h3>
+        <p class="lead">Small models let you iterate quickly and cheaply. Below are a few practical tips I use when experimenting.</p>
+
+        <h4>1. Start small</h4>
+        <p>Use smaller architectures, evaluate core behavior, then scale.</p>
+
+        <h4>2. Instrument heavily</h4>
+        <p>Logs, unit tests, and reproducible seeds are your friends.</p>
+
+        <h4>3. Costs matter</h4>
+        <p>Lower compute means more runs and faster iteration.</p>
+
+      </article>
+
+      <footer class="footer">
+        <p>© <span id="year"></span> — <a href="../blog.html" style="color:var(--muted)">Back to blog</a></p>
+      </footer>
+    </main>
+
+    <script src="../scripts/main.js"></script>
+  </body>
+</html>
