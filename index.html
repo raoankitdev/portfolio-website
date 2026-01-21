@@ -1,115 +1,135 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Your Name — Portfolio</title>
-  <!-- Using system fonts only (Courier New set in CSS) -->
-    <link rel="stylesheet" href="styles/main.css" />
-  </head>
-  <body>
 
-    <!-- Top: two-column landing: greeting on left, illustration video on right -->
-    <section class="top-landing">
-      <div class="container landing-grid">
-        <div class="intro">
-          <h2 class="greeting">Hi, I'm Ankit</h2>
-          <p class="headline">Building Software Before GPUs Steal My Job</p>
-        </div>
-        <div class="hero-art video-wrap">
-          <video src="assets/akrao.mp4" autoplay muted loop playsinline aria-label="intro illustration"></video>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name — Portfolio</title>
+  <!-- Using system fonts only (Courier New set in CSS) -->
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body>
+
+  <!-- Top: two-column landing: greeting on left, illustration video on right -->
+  <section class="top-landing">
+    <div class="container landing-grid">
+      <div class="intro">
+        <h2 class="greeting">Hi, I'm Ankit</h2>
+        <p class="headline">Building Software Before GPUs Steal My Job</p>
+      </div>
+      <div class="hero-art video-wrap">
+        <video src="assets/akrao.mp4" autoplay muted loop playsinline aria-label="intro illustration"></video>
+      </div>
+    </div>
+  </section>
+
+  <main class="container content">
+    <section id="about" class="section">
+      <h3 class="section-title">About</h3>
+      <p class="lead">i’m a fullstack AI Developer who loves to ship new softwares.</p>
+    </section>
+
+
+    <section id="projects" class="section">
+      <h3 class="section-title">Projects</h3>
+      <div class="list-cards">
+        <a class="list-card" href="#ai-chatbot">
+
+          <div class="list-details">
+            <div class="list-title">project 1</div>
+            <div class="list-desc">conversational assistant — retrieval, commands, tiny ui details</div>
+          </div>
+          <div class="list-date">wip</div>
+        </a>
+        <a class="list-card" href="#social-app">
+
+          <div class="list-details">
+            <div class="list-title">project 2</div>
+            <div class="list-desc">real‑time feed, notifications, privacy‑first sharing</div>
+          </div>
+          <div class="list-date">wip</div>
+        </a>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <h3 class="section-title">Education</h3>
+      <div class="list-cards">
+        <div class="list-card static">
+
+          <div class="list-details">
+            <div class="list-title">dit university</div>
+            <div class="list-desc">information technology -7.33 cgpa</div>
+          </div>
+          <div class="list-date">2022 — 2026</div>
         </div>
       </div>
     </section>
 
-    <main class="container content">
-      <section id="about" class="section">
-        <h3 class="section-title">About</h3>
-        <p class="lead">i’m a fullstack AI Developer who loves to ship new softwares.</p>
-      </section>
-
-
-      <section id="projects" class="section">
-        <h3 class="section-title">Projects</h3>
-        <div class="list-cards">
-          <a class="list-card" href="#ai-chatbot">
-            <div>
-              <div class="list-title">Project 1</div>
-              <div class="list-desc">conversational assistant — retrieval, commands, tiny ui details</div>
-            </div>
-            <div class="list-meta"><span class="badge">wip</span><span class="arrow">→</span></div>
-          </a>
-          <a class="list-card" href="#social-app">
-            <div>
-              <div class="list-title">Project 2</div>
-              <div class="list-desc">real‑time feed, notifications, privacy‑first sharing</div>
-            </div>
-            <div class="list-meta"><span class="badge">wip</span><span class="arrow">→</span></div>
-          </a>
-        </div>
-      </section>
-
-      <section id="education" class="section">
-        <h3 class="section-title">Education</h3>
-        <div class="list-cards">
-          <div class="list-card static">
-            <div>
-              <div class="list-title">DIT University</div>
-              <div class="list-desc">Information Technology -7.33 CGPA</div>
-            </div>
-            <div class="list-meta"><span class="dates">2022 — 2026</span></div>
+    <section id="blog" class="section">
+      <h3 class="section-title">Blog</h3>
+      <div class="list-cards">
+        <a class="list-card" href="blog.html">
+          <div class="list-details">
+            <div class="list-title">notes</div>
+            <div class="list-desc">short posts about building software, ai experiments, and writeups.</div>
           </div>
-        </div>
-      </section>
-
-      <section id="blog" class="section">
-        <h3 class="section-title">Blog</h3>
-        <div class="list-cards">
-          <a class="list-card" href="blog.html">
-            <div>
-              <div class="list-title">Notes </div>
-              <div class="list-desc">Short posts about building software, AI experiments, and writeups.</div>
-            </div>
-            <div class="list-meta"><span class="arrow">→</span></div>
-          </a>
-        </div>
-      </section>
-
-      <section id="techstack" class="section">
-        <h3 class="section-title">Tech stack</h3>
-        <div class="tech-grid">
-          <span class="tech-pill">TypeScript</span>
-          <span class="tech-pill">React</span>
-          <span class="tech-pill">Express.js</span>
-          <span class="tech-pill">MongoDB</span>
-          <span class="tech-pill">Node.js</span>
-          <span class="tech-pill">Python</span>
-          <span class="tech-pill">C++</span>
-          <span class="tech-pill">PyTorch</span>
-        </div>
-      </section>
-
-      <!-- Social bar -->
-      <section id="socials" class="social-bar">
-        <a class="icon-btn" href="https://github.com/raoankitdev" aria-label="github" title="GitHub" target="_blank" rel="noopener noreferrer">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.52 1.06 1.52 1.06.9 1.57 2.37 1.12 2.95.86.09-.67.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.08 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.74 0 0 .84-.27 2.75 1.05a9.2 9.2 0 0 1 5 0c1.91-1.32 2.75-1.05 2.75-1.05.55 1.43.2 2.48.1 2.74.64.72 1.03 1.63 1.03 2.75 0 3.95-2.34 4.81-4.57 5.07.36.32.67.94.67 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.04 10.04 0 0 0 22 12.26C22 6.58 17.52 2 12 2z"/></svg>
+          <div class="list-date">→</div>
         </a>
-        <a class="icon-btn" href="https://x.com/ankit_ay07" aria-label="x" title="X" target="_blank" rel="noopener noreferrer">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M18.3 2H22l-9.2 10.5L22.6 22h-6.3l-5-6-5.6 6H2.6l9.8-10.6L2.2 2h6.4l4.6 5.3L18.3 2z"/></svg>
-        </a>
-        <a class="icon-btn" href="https://www.linkedin.com/in/ankityadav0709/" aria-label="linkedin" title="LinkedIn" target="_blank" rel="noopener noreferrer">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8.98h5V24H0zM8.98 8.98h4.78v2.06h.07c.67-1.26 2.3-2.6 4.74-2.6 5.06 0 5.99 3.33 5.99 7.65V24h-5v-6.78c0-1.62-.03-3.7-2.26-3.7-2.26 0-2.61 1.77-2.61 3.59V24h-5V8.98z"/></svg>
-        </a>
-        <a class="icon-btn" href="mailto:ankitraosocials@gmail.com" aria-label="email" title="Email">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16a2 2 0 0 0 2-2V6c0-1.1-.9-2-2-2Zm0 4-8 5L4 8V6l8 5 8-5v2Z"/></svg>
-        </a>
-      </section>
+      </div>
+    </section>
 
-      <footer class="footer">
-        <p>© <span id="year"></span></p>
-      </footer>
-    </main>
+    <section id="techstack" class="section">
+      <h3 class="section-title">Tech stack</h3>
+      <div class="tech-grid">
+        <span class="tech-pill">TypeScript</span>
+        <span class="tech-pill">React</span>
+        <span class="tech-pill">Express.js</span>
+        <span class="tech-pill">MongoDB</span>
+        <span class="tech-pill">Node.js</span>
+        <span class="tech-pill">Python</span>
+        <span class="tech-pill">C++</span>
+        <span class="tech-pill">PyTorch</span>
+      </div>
+    </section>
 
-    <script src="scripts/main.js"></script>
-  </body>
+    <!-- Social bar -->
+    <section id="socials" class="social-bar">
+      <a class="icon-btn" href="https://github.com/raoankitdev" aria-label="github" title="GitHub" target="_blank"
+        rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+          <path
+            d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.52 1.06 1.52 1.06.9 1.57 2.37 1.12 2.95.86.09-.67.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.08 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.74 0 0 .84-.27 2.75 1.05a9.2 9.2 0 0 1 5 0c1.91-1.32 2.75-1.05 2.75-1.05.55 1.43.2 2.48.1 2.74.64.72 1.03 1.63 1.03 2.75 0 3.95-2.34 4.81-4.57 5.07.36.32.67.94.67 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.04 10.04 0 0 0 22 12.26C22 6.58 17.52 2 12 2z" />
+        </svg>
+      </a>
+      <a class="icon-btn" href="https://x.com/ankit_ay07" aria-label="x" title="X" target="_blank"
+        rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+          <path d="M18.3 2H22l-9.2 10.5L22.6 22h-6.3l-5-6-5.6 6H2.6l9.8-10.6L2.2 2h6.4l4.6 5.3L18.3 2z" />
+        </svg>
+      </a>
+      <a class="icon-btn" href="https://www.linkedin.com/in/ankityadav0709/" aria-label="linkedin" title="LinkedIn"
+        target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+          <path
+            d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8.98h5V24H0zM8.98 8.98h4.78v2.06h.07c.67-1.26 2.3-2.6 4.74-2.6 5.06 0 5.99 3.33 5.99 7.65V24h-5v-6.78c0-1.62-.03-3.7-2.26-3.7-2.26 0-2.61 1.77-2.61 3.59V24h-5V8.98z" />
+        </svg>
+      </a>
+      <a class="icon-btn" href="mailto:ankitraosocials@gmail.com" aria-label="email" title="Email">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+          <path
+            d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16a2 2 0 0 0 2-2V6c0-1.1-.9-2-2-2Zm0 4-8 5L4 8V6l8 5 8-5v2Z" />
+        </svg>
+      </a>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="year"></span></p>
+    </footer>
+  </main>
+
+  <script src="scripts/main.js"></script>
+</body>
+
 </html>
